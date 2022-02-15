@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inspiration&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/app/sass/style.css" />
+
+    <script src="/app/script/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="hero-description">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="hero-form">
+        <div class="payment-description flex flex-jc-c flex-ai-c">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form action="" novalidate>
+          <label for="firstname">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First Name"
+              class=""
+            />
+            <span class="fnmsg">First name cannot be empty</span>
+          </label>
+          <label for="lastname">
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+              class=""
+            />
+            <span class="lnmsg">Last name cannot be empty</span>
+          </label>
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class=""
+            />
+            <span class="emsg">Looks like this is not an email</span>
+          </label>
+          <label for="password">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class=""
+            />
+            <span class="psmsg">Password cannot be empty</span>
+          </label>
+
+          <button type="submit">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <!-- 
+
+   
+
+  
+
+  
+   
+  
+  
+
+  
+
+   -->
+  </body>
+</html>
