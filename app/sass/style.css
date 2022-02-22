@@ -245,7 +245,7 @@ main .hero-form > form > label > input:focus {
 main .hero-form > form > label > span {
   position: absolute;
   top: 10.5vw;
-  right: 1vw;
+  right: -72vw;
   font-size: 2.5vw;
   color: #ff7a7a;
   font-style: italic;
@@ -255,7 +255,7 @@ main .hero-form > form > label > span {
 @media (min-width: 650px) {
   main .hero-form > form > label > span {
     top: 3vw;
-    right: 0.3vw;
+    right: -35vw;
     font-size: 0.7vw;
   }
 }

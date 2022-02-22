@@ -141,14 +141,14 @@ main {
         > span {
           position: absolute;
           top: 10.5vw;
-          right: 1vw;
+          right: -72vw;
           font-size: 2.5vw;
           color: #ff7a7a;
           font-style: italic;
           visibility: hidden;
           @media (min-width: 650px) {
             top: 3vw;
-            right: 0.3vw;
+            right: -35vw;
             font-size: 0.7vw;
           }
           &.active {

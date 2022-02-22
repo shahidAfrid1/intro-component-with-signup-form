@@ -9,12 +9,12 @@ let emsg = document.querySelector(".emsg");
 let psmsg = document.querySelector(".psmsg");
 
 form.addEventListener("submit", (e) => {
-  if (!cheackName(firstName.value)) {
+  if (!checkEmpty(firstName.value)) {
     firstName.classList.add("error");
     fnmsg.classList.add("active");
     e.preventDefault();
   }
-  if (!cheackName(lastName.value)) {
+  if (!checkEmpty(lastName.value)) {
     lastName.classList.add("error");
     lnmsg.classList.add("active");
     e.preventDefault();
@@ -24,14 +24,14 @@ form.addEventListener("submit", (e) => {
     emsg.classList.add("active");
     e.preventDefault();
   }
-  if (cheackName(password.value)<8) {
+  if (!checkEmpty(password.value)) {
     password.classList.add("error");
     psmsg.classList.add("active");
     e.preventDefault();
   }
 });
 
-function cheackName(value) {
+function checkEmpty(value) {
   if (value.length <= 0) {
     return false;
   }
@@ -46,20 +46,15 @@ function cheackEmail(email) {
   return false;
 }
 
-function cheackPassword(pass) {
-  if (pass.length <= 7) {
-    return pass.length;
-  }
-  return true;
-}
+
 
 setInterval(() => {
-  if (cheackName(firstName.value)) {
+  if (checkEmpty(firstName.value)) {
     firstName.classList.remove("error");
     fnmsg.classList.remove("active");
     clearInterval();
   }
-  if (cheackName(lastName.value)) {
+  if (checkEmpty(lastName.value)) {
     lastName.classList.remove("error");
     lnmsg.classList.remove("active");
     clearInterval();
@@ -69,7 +64,7 @@ setInterval(() => {
     emsg.classList.remove("active");
     clearInterval();
   }
-  if (cheackName(password.value)) {
+  if (checkEmpty(password.value)) {
     password.classList.remove("error");
     psmsg.classList.remove("active");
     clearInterval();
